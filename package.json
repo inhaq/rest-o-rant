@@ -1,0 +1,27 @@
+{
+  "name": "rest-o-rant",
+  "version": "1.0.0",
+  "description": "another js app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inhaq/rest-o-rant.git"
+  },
+  "author": "inhaq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inhaq/rest-o-rant/issues"
+  },
+  "homepage": "https://github.com/inhaq/rest-o-rant#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
+}
