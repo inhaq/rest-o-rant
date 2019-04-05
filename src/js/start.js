@@ -2,7 +2,7 @@ export default function starter() {
     // content
     const starter1 = `<div class="food-col col-lg-3 col-md-3 col-sm-3 col-xs-12">
                           <div class="img-1 food-img bg-img">
-                            <p class="price niconne">$50</p>
+                            <p class="price niconne">$5</p>
                           </div>
                         </div>
 
@@ -25,7 +25,7 @@ export default function starter() {
 
     const starter2 = `<div class="food-col col-lg-3 col-md-3 col-sm-3 col-xs-12">
                           <div class="img-2 food-img bg-img">
-                            <p class="price niconne">$50</p>
+                            <p class="price niconne">$10</p>
                           </div>
                         </div>
 
@@ -48,7 +48,7 @@ export default function starter() {
 
     const starter3 = `<div class="food-col col-lg-3 col-md-3 col-sm-3 col-xs-12">
                           <div class="img-3 food-img bg-img">
-                            <p class="price niconne">$50</p>
+                            <p class="price niconne">$15</p>
                           </div>
                         </div>
 
@@ -69,7 +69,7 @@ export default function starter() {
                           </div>
                         </div>`;
 
-    // starter
+    // starter - first column
     const firstTab = document.createElement('div');
     firstTab.className = 'tab-pane fade in active';
     firstTab.id = 'starters';
@@ -77,8 +77,8 @@ export default function starter() {
     const menuList = document.createElement('div');
     menuList.className = 'menu-list row no-margin';
 
-    const menuCol = document.createElement('div');
-    menuCol.className = 'menu-col col-lg-6 col-md-6 col-sm-6 col-xs-12';
+    const menuCol1 = document.createElement('div');
+    menuCol1.className = 'menu-col col-lg-6 col-md-6 col-sm-6 col-xs-12';
 
     const menuRow1 = document.createElement('div');
     menuRow1.className = 'menu-box row no-margin';
@@ -86,17 +86,37 @@ export default function starter() {
     const menuRow3 = menuRow1.cloneNode(true);
 
     firstTab.appendChild(menuList);
-    menuList.appendChild(menuCol);
-    menuCol.appendChild(menuRow1);
+    menuList.appendChild(menuCol1);
 
+    menuCol1.appendChild(menuRow1);
     menuRow1.innerHTML = starter1;
 
-    menuCol.appendChild(menuRow2);
+    menuCol1.appendChild(menuRow2);
     menuRow2.innerHTML = starter2;
 
-    menuCol.appendChild(menuRow3);
+    menuCol1.appendChild(menuRow3);
     menuRow3.innerHTML = starter3;
 
-    console.log(firstTab);
+    // second column
+
+    const menuCol2 = document.createElement('div');
+    menuCol2.className = 'menu-col col-lg-6 col-md-6 col-sm-6 col-xs-12';
+
+    const menuRow4 = document.createElement('div');
+    menuRow4.className = 'menu-box row no-margin';
+    const menuRow5 = menuRow4.cloneNode(true);
+    const menuRow6 = menuRow4.cloneNode(true);
+
+    menuCol1.parentNode.insertBefore(menuCol2, menuCol1);
+
+    menuCol2.appendChild(menuRow4);
+    menuRow4.innerHTML = starter1;
+
+    menuCol2.appendChild(menuRow5);
+    menuRow5.innerHTML = starter2;
+
+    menuCol2.appendChild(menuRow6);
+    menuRow6.innerHTML = starter3;
+
     return firstTab;
 }

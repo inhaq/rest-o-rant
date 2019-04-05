@@ -6,14 +6,11 @@ import soup from "./js/soup";
 
 const content = document.getElementById('content');
 content.appendChild(pageLoad());
-
-
 const deepPageLoadElem = document.querySelector('.tab-content');
-deepPageLoadElem.innerHTML = starter();
+deepPageLoadElem.appendChild(starter());
 
 
-pageLoad();
-starter();
-soup();
-lunch();
-desserts();
+deepPageLoadElem.appendChild(soup());
+deepPageLoadElem.appendChild(lunch());
+deepPageLoadElem.appendChild(desserts());
+
