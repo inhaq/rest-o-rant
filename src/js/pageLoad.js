@@ -39,16 +39,16 @@ export default function pageLoad() {
     ul.className = 'nav nav-tabs';
 
     const li = `<li class="active">
-                  <a href="#starters" aria-controls="starters">Starters</a>
+                  <a href="#" aria-controls="starters">Starters</a>
                 </li>
                 <li>
-                  <a href="#soup-items" aria-controls="soup-items">Soup Items</a>
+                  <a href="#" aria-controls="soup-items">Soup Items</a>
                 </li>
                 <li>
-                  <a href="#lunch" aria-controls="lunch">Lunch</a>
+                  <a href="#" aria-controls="lunch">Lunch</a>
                 </li>
                 <li>
-                  <a href="#dessert" aria-controls="dessert">Desserts</a>
+                  <a href="#" aria-controls="dessert">Desserts</a>
                 </li>`;
 
     menuInner.appendChild(realStuff);
