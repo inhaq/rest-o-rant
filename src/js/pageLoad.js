@@ -1,44 +1,43 @@
 export default function pageLoad() {
+  // structure
+  const bgImg = document.createElement("div");
+  const darkOverlay = document.createElement("div");
+  const menu = document.createElement("div");
+  const container = document.createElement("div");
+  const menuInner = document.createElement("div");
+  const sectionHead = document.createElement("div");
 
-    // structure
-    const bgImg = document.createElement('div');
-    const darkOverlay = document.createElement('div');
-    const menu = document.createElement('div');
-    const container = document.createElement('div');
-    const menuInner = document.createElement('div');
-    const sectionHead = document.createElement('div');
+  bgImg.className = "section-img bg-img";
+  darkOverlay.className = "dark-overlay";
+  menu.className = "menu padding80";
+  container.className = "container";
+  menuInner.className = "menu-inner row no-margin";
+  sectionHead.className = "section-head text-center";
 
-    bgImg.className = 'section-img bg-img';
-    darkOverlay.className = 'dark-overlay';
-    menu.className = 'menu padding80';
-    container.className = 'container';
-    menuInner.className = 'menu-inner row no-margin';
-    sectionHead.className = 'section-head text-center';
+  bgImg.appendChild(darkOverlay);
+  darkOverlay.appendChild(menu);
+  menu.appendChild(container);
+  container.appendChild(menuInner);
+  menuInner.appendChild(sectionHead);
 
-    bgImg.appendChild(darkOverlay);
-    darkOverlay.appendChild(menu);
-    menu.appendChild(container);
-    container.appendChild(menuInner);
-    menuInner.appendChild(sectionHead);
+  // header
+  const h3 = document.createElement("h3");
+  h3.className = "intro-title main-tit niconne";
+  h3.textContent = "Our Rest-o-rant Menu";
 
-    // header
-    const h3 = document.createElement('h3');
-    h3.className = 'intro-title main-tit niconne';
-    h3.textContent = 'Our Rest-o-rant Menu';
+  const separator = document.createElement("div");
+  separator.className = "separator";
 
-    const separator = document.createElement('div');
-    separator.className = 'separator';
+  sectionHead.appendChild(h3);
+  sectionHead.appendChild(separator);
 
-    sectionHead.appendChild(h3);
-    sectionHead.appendChild(separator);
+  // nav
+  const realStuff = document.createElement("div");
+  realStuff.className = "real-stuff";
+  const ul = document.createElement("ul");
+  ul.className = "nav nav-tabs";
 
-    // nav
-    const realStuff = document.createElement('div');
-    realStuff.className = 'real-stuff';
-    const ul = document.createElement('ul');
-    ul.className = 'nav nav-tabs';
-
-    const li = `<li class="active">
+  const li = `<li class="active">
                   <a href="#" aria-controls="starters">Starters</a>
                 </li>
                 <li>
@@ -51,14 +50,14 @@ export default function pageLoad() {
                   <a href="#" aria-controls="dessert">Desserts</a>
                 </li>`;
 
-    menuInner.appendChild(realStuff);
-    realStuff.appendChild(ul);
-    ul.innerHTML = li;
+  menuInner.appendChild(realStuff);
+  realStuff.appendChild(ul);
+  ul.innerHTML = li;
 
-    // tabs
-    const tabContent = document.createElement('div');
-    tabContent.className = 'tab-content padding30';
-    realStuff.appendChild(tabContent);
+  // tabs
+  const tabContent = document.createElement("div");
+  tabContent.className = "tab-content padding30";
+  realStuff.appendChild(tabContent);
 
-    return bgImg;
+  return bgImg;
 }
