@@ -2,7 +2,7 @@
 
 > Using Javascript to master webpack, modules, dom manipulation, event handler
 
-##### Takeaways:
+##### Takeaways:
 
 -   Appending dom elements
     
