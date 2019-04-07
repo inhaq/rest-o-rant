@@ -7,7 +7,7 @@ export default function soup() {
 
                         <div class="food-col-1 col-lg-9 col-md-9 col-sm-9 col-xs-12">
                           <div class="food-content">
-                            <h3 class="food-tit niconne">Baked cabbage</h3>
+                            <h3 class="food-tit niconne">French Onion</h3>
                             <p class="food-des">Lorem ipsum dolor sit amet,
                               consectetur adipisicing elit, sed do eiusmod tempor
                               incididunt ut labore et dolore magna aliqua. Ut enim
@@ -30,7 +30,7 @@ export default function soup() {
 
                         <div class="food-col-1 col-lg-9 col-md-9 col-sm-9 col-xs-12">
                           <div class="food-content">
-                            <h3 class="food-tit niconne">Baked cabbage</h3>
+                            <h3 class="food-tit niconne">Gazpacho</h3>
                             <p class="food-des">Lorem ipsum dolor sit amet,
                               consectetur adipisicing elit, sed do eiusmod tempor
                               incididunt ut labore et dolore magna aliqua. Ut enim
@@ -53,7 +53,7 @@ export default function soup() {
 
                         <div class="food-col-1 col-lg-9 col-md-9 col-sm-9 col-xs-12">
                           <div class="food-content">
-                            <h3 class="food-tit niconne">Baked cabbage</h3>
+                            <h3 class="food-tit niconne">Borscht</h3>
                             <p class="food-des">Lorem ipsum dolor sit amet,
                               consectetur adipisicing elit, sed do eiusmod tempor
                               incididunt ut labore et dolore magna aliqua. Ut enim
